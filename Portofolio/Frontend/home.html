@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav {
+            margin: 0;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: #ffffff;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+
+        .intro {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .featured {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+
+        .project {
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+        }
+
+        .project img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        .cta {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .cta a {
+            background: #35424a;
+            color: #ffffff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .cta a:hover {
+            background: #4a626e;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to My Portfolio</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#blog">Blog</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="intro">
+        <h2>Hello! I'm [Your Name]</h2>
+        <p>I am a [Your Profession/Field] with a passion for [Your Interests]. I love creating innovative solutions that
+            make a difference.</p>
+    </section>
+
+    <section class="featured">
+        <div class="project">
+            <img src="project1.jpg" alt="Project 1">
+            <h3>Project Title 1</h3>
+            <p>A brief description of the project, highlighting its features and technologies used.</p>
+        </div>
+        <div class="project">
+            <img src="project2.jpg" alt="Project 2">
+            <h3>Project Title 2</h3>
+            <p>A brief description of the project, highlighting its features and technologies used.</p>
+        </div>
+    </section>
+
+    <section class="cta">
+        <h2>Interested in my work?</h2>
+        <a href="#projects">View My Projects</a>
+        <p>or</p>
+        <a href="#contact">Contact Me</a>
+    </section>
+</body>
+
+</html>

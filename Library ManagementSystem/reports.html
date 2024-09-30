@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management - Reports and Analytics</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="home.html" class="nav-logo">Library Management</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="home.html">Home</a></li>
+                <li class="nav-item"><a href="reports.html">Reports</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Reports and Analytics Section -->
+    <section class="reports-section">
+        <h2>Reports and Analytics</h2>
+        <!-- Options to Generate Reports -->
+        <div class="report-options">
+            <button onclick="generateReport('overdueLoans')">Overdue Loans</button>
+            <button onclick="generateReport('activeMemberships')">Active Memberships</button>
+            <button onclick="generateReport('bookPopularity')">Book Popularity</button>
+        </div>
+
+        <!-- Visual Analytics (Placeholder for Charts/Graphs) -->
+        <div id="analytics">
+            <p>Graphs and charts will be displayed here.</p>
+        </div>
+
+        <!-- Export Options -->
+        <div class="export-options">
+            <button onclick="exportReport('pdf')">Export to PDF</button>
+            <button onclick="exportReport('excel')">Export to Excel</button>
+        </div>
+    </section>
+
+    <!-- JavaScript File -->
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management - Staff Details</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="home.html" class="nav-logo">Library Management</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="home.html">Home</a></li>
+                <li class="nav-item"><a href="staff-list.html">Staff</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Staff Details Section -->
+    <section class="staff-details-section">
+        <h2>Staff Details</h2>
+        <form id="staffDetailsForm">
+            <div class="form-group">
+                <label for="staffID">StaffID:</label>
+                <input type="text" id="staffID" name="staffID" value="1" readonly>
+            </div>
+            <div class="form-group">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" value="John">
+            </div>
+            <div class="form-group">
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" value="Doe">
+            </div>
+            <div class="form-group">
+                <label for="position">Position:</label>
+                <input type="text" id="position" name="position" value="Librarian">
+            </div>
+            <div class="form-group">
+                <label for="contactNumber">Contact Number:</label>
+                <input type="tel" id="contactNumber" name="contactNumber" value="123-456-7890">
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" value="john.doe@example.com">
+            </div>
+            <div class="form-group">
+                <label for="hireDate">Hire Date:</label>
+                <input type="date" id="hireDate" name="hireDate" value="2022-01-15">
+            </div>
+            <div class="form-group">
+                <label for="status">Status:</label>
+                <select id="status" name="status">
+                    <option value="Active">Active</option>
+                    <option value="Inactive">Inactive</option>
+                </select>
+            </div>
+            <button type="button" onclick="saveStaffDetails()">Save</button>
+        </form>
+    </section>
+
+    <!-- JavaScript File -->
+    <script src="js/main.js"></script>
+</body>
+</html>

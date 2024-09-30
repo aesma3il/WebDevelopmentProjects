@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management - Book Details</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="home.html" class="nav-logo">Library Management</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="home.html">Home</a></li>
+                <li class="nav-item"><a href="book-list.html">Books</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Book Details Section -->
+    <section class="book-details-section">
+        <h2>Book Details</h2>
+        <form id="bookDetailsForm">
+            <div class="form-group">
+                <label for="bookID">BookID:</label>
+                <input type="text" id="bookID" name="bookID" value="1" readonly>
+            </div>
+            <div class="form-group">
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title" value="JavaScript Basics">
+            </div>
+            <div class="form-group">
+                <label for="author">Author:</label>
+                <input type="text" id="author" name="author" value="John Doe">
+            </div>
+            <div class="form-group">
+                <label for="isbn">ISBN:</label>
+                <input type="text" id="isbn" name="isbn" value="1234567890">
+            </div>
+            <div class="form-group">
+                <label for="publisher">Publisher:</label>
+                <input type="text" id="publisher" name="publisher" value="Penguin Random House">
+            </div>
+            <div class="form-group">
+                <label for="publicationDate">Publication Date:</label>
+                <input type="date" id="publicationDate" name="publicationDate" value="2023-01-01">
+            </div>
+            <div class="form-group">
+                <label for="genre">Genre:</label>
+                <input type="text" id="genre" name="genre" value="Programming">
+            </div>
+            <div class="form-group">
+                <label for="copiesAvailable">Copies Available:</label>
+                <input type="number" id="copiesAvailable" name="copiesAvailable" value="5">
+            </div>
+            <div class="form-group">
+                <label for="totalCopies">Total Copies:</label>
+                <input type="number" id="totalCopies" name="totalCopies" value="10">
+            </div>
+            <button type="button" onclick="saveBookDetails()">Save</button>
+        </form>
+    </section>
+
+    <!-- JavaScript File -->
+    <script src="js/main.js"></script>
+</body>
+</html>

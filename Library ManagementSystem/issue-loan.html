@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Management - Issue Loan</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Library Management</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html">Home</a></li>
+                <li class="nav-item"><a href="#">Books</a></li>
+                <li class="nav-item"><a href="#">Members</a></li>
+                <li class="nav-item"><a href="#">Staff</a></li>
+                <li class="nav-item"><a href="loan-list.html">Loans</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Issue Loan Section -->
+    <section class="issue-loan-section">
+        <h2>Issue New Loan</h2>
+        <form id="issueLoanForm">
+            <div class="form-group">
+                <label for="selectMemberID">Select Member:</label>
+                <select id="selectMemberID" name="selectMemberID">
+                    <!-- Sample Options -->
+                    <option value="101">John Doe (ID: 101)</option>
+                    <option value="102">Jane Smith (ID: 102)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="selectBookID">Select Book:</label>
+                <select id="selectBookID" name="selectBookID">
+                    <!-- Sample Options -->
+                    <option value="202">JavaScript Basics (ID: 202)</option>
+                    <option value="203">CSS Mastery (ID: 203)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="loanDate">Loan Date:</label>
+                <input type="date" id="loanDate" name="loanDate" required>
+            </div>
+            <div class="form-group">
+                <label for="dueDate">Due Date:</label>
+                <input type="date" id="dueDate" name="dueDate" required>
+            </div>
+            <button type="submit">Save</button>
+            <button type="button" onclick="cancelIssueLoan()">Cancel</button>
+        </form>
+    </section>
+
+    <!-- JavaScript File -->
+    <script src="js/main.js"></script>
+</body>
+</html>

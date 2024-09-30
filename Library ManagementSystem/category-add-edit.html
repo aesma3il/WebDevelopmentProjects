@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management - Add/Edit Category</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="home.html" class="nav-logo">Library Management</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="home.html">Home</a></li>
+                <li class="nav-item"><a href="category-list.html">Categories</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Add/Edit Category Section -->
+    <section class="category-add-edit-section">
+        <h2>Add/Edit Category</h2>
+        <form id="categoryAddEditForm">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" rows="4" required></textarea>
+            </div>
+            <button type="submit">Save</button>
+            <button type="button" onclick="cancelAddEditCategory()">Cancel</button>
+        </form>
+    </section>
+
+    <!-- JavaScript File -->
+    <script src="home.html"></script>
+</body>
+</html>

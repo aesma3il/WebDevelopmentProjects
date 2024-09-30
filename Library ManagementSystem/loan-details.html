@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Management - Loan Details</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Library Management</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html">Home</a></li>
+                <li class="nav-item"><a href="#">Books</a></li>
+                <li class="nav-item"><a href="#">Members</a></li>
+                <li class="nav-item"><a href="#">Staff</a></li>
+                <li class="nav-item"><a href="loan-list.html">Loans</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Loan Details Section -->
+    <section class="loan-details-section">
+        <h2>Loan Details</h2>
+        <form id="loanDetailsForm">
+            <div class="form-group">
+                <label for="loanID">LoanID:</label>
+                <input type="text" id="loanID" name="loanID" value="1" readonly>
+            </div>
+            <div class="form-group">
+                <label for="memberID">MemberID:</label>
+                <input type="text" id="memberID" name="memberID" value="101" readonly>
+            </div>
+            <div class="form-group">
+                <label for="bookID">BookID:</label>
+                <input type="text" id="bookID" name="bookID" value="202" readonly>
+            </div>
+            <div class="form-group">
+                <label for="loanDate">Loan Date:</label>
+                <input type="date" id="loanDate" name="loanDate" value="2024-08-01">
+            </div>
+            <div class="form-group">
+                <label for="dueDate">Due Date:</label>
+                <input type="date" id="dueDate" name="dueDate" value="2024-08-15">
+            </div>
+            <div class="form-group">
+                <label for="returnDate">Return Date:</label>
+                <input type="date" id="returnDate" name="returnDate">
+            </div>
+            <div class="form-group">
+                <label for="status">Status:</label>
+                <select id="status" name="status">
+                    <option value="On Loan">On Loan</option>
+                    <option value="Returned">Returned</option>
+                    <option value="Overdue">Overdue</option>
+                </select>
+            </div>
+            <button type="button" onclick="saveLoanDetails()">Save</button>
+            <button type="button" onclick="markAsReturned()">Mark as Returned</button>
+            <button type="button" onclick="calculateFine()">Calculate Fine</button>
+        </form>
+    </section>
+
+    <!-- JavaScript File -->
+    <script src="js/main.js"></script>
+</body>
+</html>

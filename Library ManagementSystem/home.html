@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System - Home</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">Library Management</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="category-add-edit.html">Category</a></li>
+                <li class="nav-item"><a href="book-list.html"> Books</a></li>
+                <li class="nav-item"><a href="loan-list.html">Loans</a></li>
+                <li class="nav-item"><a href="publisher-list.html">Publishers</a></li>
+                <li class="nav-item"><a href="staff-list.html">Staff</a></li>
+                <li class="nav-item"><a href="reservation-list.html">Reservation</a></li>
+                <li class="nav-item"><a href="user-profile.html">User Profile</a></li>
+                <li class="nav-item"><a href="issue-loan.html">Issue Loan</a></li>
+                <li class="nav-item"><a href="signup.html">Sign Up</a></li>
+                <li class="nav-item"><a href="login.html">Login</a></li>
+              
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Search Bar -->
+    <div class="search-container">
+        <input type="text" id="search-bar" placeholder="Search for books, members, loans...">
+        <button type="button" onclick="search()">Search</button>
+    </div>
+
+    <!-- Overview of Library Statistics -->
+    <section class="stats-container">
+        <div class="stat">
+            <h2>Total Books</h2>
+            <p id="total-books">2000</p>
+        </div>
+        <div class="stat">
+            <h2>Active Members</h2>
+            <p id="active-members">150</p>
+        </div>
+        <div class="stat">
+            <h2>Total Loans</h2>
+            <p id="total-loans">350</p>
+        </div>
+    </section>
+
+    <!-- Quick Access Buttons -->
+    <section class="quick-access">
+        <button onclick="addNewBook()">Add New Book</button>
+        <button onclick="registerNewMember()">Register New Member</button>
+    </section>
+
+    <!-- Announcements/Notices -->
+    <section class="announcements">
+        <h2>Announcements</h2>
+        <p>Welcome to our new library management system! Stay tuned for more updates.</p>
+    </section>
+
+    <!-- JavaScript File -->
+    <script src="js/main.js"></script>
+</body>
+</html>

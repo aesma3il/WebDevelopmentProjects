@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management - Book List</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="home.html" class="nav-logo">Library Management</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="home.html">Home</a></li>
+                <li class="nav-item"><a href="book-list.html">Books</a></li>
+                <li class="nav-item"><a href="staff-list.html">Staff</a></li>
+                <li class="nav-item"><a href="reservation-list.html">Reservations</a></li>
+                <li class="nav-item"><a href="fine-list.html">Fines</a></li>
+                <li class="nav-item"><a href="category-list.html">Categories</a></li>
+                <li class="nav-item"><a href="publisher-list.html">Publishers</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Book List Section -->
+    <section class="book-list-section">
+        <h2>Book List</h2>
+        <!-- Search/Filter Options -->
+        <div class="search-filter">
+            <input type="text" id="searchBook" placeholder="Search by title, author, or genre">
+            <button onclick="searchBook()">Search</button>
+        </div>
+
+        <!-- Book Table -->
+        <table id="bookTable">
+            <thead>
+                <tr>
+                    <th>BookID</th>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Genre</th>
+                    <th>Copies Available</th>
+                    <th>Total Copies</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Sample Data -->
+                <tr>
+                    <td>1</td>
+                    <td>JavaScript Basics</td>
+                    <td>John Doe</td>
+                    <td>Programming</td>
+                    <td>5</td>
+                    <td>10</td>
+                    <td><button onclick="viewBookDetails(1)">View/Edit</button></td>
+                </tr>
+                <!-- More rows will be dynamically added -->
+            </tbody>
+        </table>
+
+        <!-- Button to Add New Book -->
+        <button onclick="addNewBook()">Add New Book</button>
+    </section>
+
+    <!-- JavaScript File -->
+    <script src="js/main.js"></script>
+</body>
+</html>

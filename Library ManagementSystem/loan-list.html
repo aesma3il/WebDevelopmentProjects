@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Management - Loan List</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="home.html" class="nav-logo">Library Management</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html">Home</a></li>
+                <li class="nav-item"><a href="#">Books</a></li>
+                <li class="nav-item"><a href="#">Members</a></li>
+                <li class="nav-item"><a href="#">Staff</a></li>
+                <li class="nav-item"><a href="loan-list.html">Loans</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Loan List Section -->
+    <section class="loan-list-section">
+        <h2>Loan List</h2>
+        <!-- Search/Filter Options -->
+        <div class="search-filter">
+            <input type="text" id="search" placeholder="Search by member name, book title, or status">
+            <button onclick="searchLoan()">Search</button>
+        </div>
+
+        <!-- Loan Table -->
+        <table id="loanTable">
+            <thead>
+                <tr>
+                    <th>LoanID</th>
+                    <th>MemberID</th>
+                    <th>BookID</th>
+                    <th>Loan Date</th>
+                    <th>Due Date</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Sample Data -->
+                <tr>
+                    <td>1</td>
+                    <td>101</td>
+                    <td>202</td>
+                    <td>2024-08-01</td>
+                    <td>2024-08-15</td>
+                    <td>On Loan</td>
+                    <td><button onclick="viewLoanDetails(1)">View/Edit</button></td>
+                </tr>
+                <!-- More rows will be dynamically added -->
+            </tbody>
+        </table>
+
+        <!-- Button to Issue New Loan -->
+        <button onclick="issueNewLoan()">Issue New Loan</button>
+    </section>
+
+    <!-- JavaScript File -->
+    <script src="js/main.js"></script>
+</body>
+</html>

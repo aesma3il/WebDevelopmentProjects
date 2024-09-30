@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management - Reservation List</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="home.html" class="nav-logo">Library Management</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="home.html">Home</a></li>
+                <li class="nav-item"><a href="reservation-list.html">Reservations</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Reservation List Section -->
+    <section class="reservation-list-section">
+        <h2>Reservation List</h2>
+        <!-- Search/Filter Options -->
+        <div class="search-filter">
+            <input type="text" id="searchReservation" placeholder="Search by member name, book title, or status">
+            <button onclick="searchReservation()">Search</button>
+        </div>
+
+        <!-- Reservation Table -->
+        <table id="reservationTable">
+            <thead>
+                <tr>
+                    <th>ReservationID</th>
+                    <th>MemberID</th>
+                    <th>BookID</th>
+                    <th>Reservation Date</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Sample Data -->
+                <tr>
+                    <td>1</td>
+                    <td>101</td>
+                    <td>202</td>
+                    <td>2024-08-01</td>
+                    <td>Active</td>
+                    <td><button onclick="viewReservationDetails(1)">View/Edit</button></td>
+                </tr>
+                <!-- More rows will be dynamically added -->
+            </tbody>
+        </table>
+    </section>
+
+    <!-- JavaScript File -->
+    <script src="js/main.js"></script>
+</body>
+</html>

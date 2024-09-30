@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management - Publisher List</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="home.html" class="nav-logo">Library Management</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="home.html">Home</a></li>
+                <li class="nav-item"><a href="publisher-list.html">Publishers</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Publisher List Section -->
+    <section class="publisher-list-section">
+        <h2>Publisher List</h2>
+        <!-- Publisher Table -->
+        <table id="publisherTable">
+            <thead>
+                <tr>
+                    <th>PublisherID</th>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Contact Number</th>
+                    <th>Email</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Sample Data -->
+                <tr>
+                    <td>1</td>
+                    <td>Penguin Random House</td>
+                    <td>New York, NY, USA</td>
+                    <td>123-456-7890</td>
+                    <td>contact@penguinrandomhouse.com</td>
+                    <td><button onclick="viewPublisherDetails(1)">View/Edit</button></td>
+                </tr>
+                <!-- More rows will be dynamically added -->
+            </tbody>
+        </table>
+
+        <!-- Button to Add New Publisher -->
+        <button onclick="addNewPublisher()">Add New Publisher</button>
+    </section>
+
+    <!-- JavaScript File -->
+    <script src="js/main.js"></script>
+</body>
+</html>
